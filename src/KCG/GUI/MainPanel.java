@@ -3,6 +3,7 @@ import java.awt.*;
 import javax.swing.*;
 
 public class MainPanel extends JPanel{
+    private static final long serialVersionUID = 1L;
     int screenWidth;
     int screenHeight;
     JTextField text1 = new JTextField();
