@@ -12,5 +12,6 @@ public class test{
         mainWindow.setVisible(true);
         mainWindow.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         System.out.println("hellsssssssso");
+        System.out.println("·ëÌìÑô¼ĞÈû£¬¼Ğ¿§°Ë");
     }
 }
