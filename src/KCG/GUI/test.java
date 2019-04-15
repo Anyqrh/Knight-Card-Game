@@ -11,6 +11,6 @@ public class test{
         mainWindow.setExtendedState(JFrame.MAXIMIZED_BOTH);
         mainWindow.setVisible(true);
         mainWindow.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        System.out.println("hello");
+        System.out.println("hellsssssssso");
     }
 }
