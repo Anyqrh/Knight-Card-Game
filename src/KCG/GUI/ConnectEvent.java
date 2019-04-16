@@ -6,13 +6,13 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JTextField;
 
-public class ConnectEvent implements ActionListener {
+public class ConnectEvent extends Thread implements ActionListener {
 	private String IP;
 	private String port;
 		
 	public ConnectEvent(JButton connectButton, JTextField field1, JTextField field2) {
 		connectButton.addActionListener(new ActionListener() {   // 这个自己还无法理解可以这样实现
-		@Override
+	
 		public void actionPerformed(ActionEvent e) {
 			String cmd = e.getActionCommand();
 			IP = field1.getText();
@@ -29,6 +29,7 @@ public class ConnectEvent implements ActionListener {
 				}
 			}
 		});
+		
 	}
 	@Override
 	public void actionPerformed(ActionEvent e) {

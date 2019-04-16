@@ -3,7 +3,6 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 
-
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -55,9 +54,9 @@ public class MainPanel extends JPanel{
         connectButton.setFont(new Font(null, Font.PLAIN, 35));
         startButton.setFont(new Font(null, Font.PLAIN, 40));
         
+        
     	new ConnectEvent(connectButton, text1, text2);// 创建connectevent的监视器 将text和text2传入ConnectEvent中
     	
-        
         labelTitle.setBounds((screenWidth-1000)/2,(int)(screenHeight*0.02),1000,100);
         label1.setBounds((screenWidth-680)/2,(int)(screenHeight*0.17),180,50);
         text1.setBounds((screenWidth-680)/2+180+1,(int)(screenHeight*0.17),500,50);
