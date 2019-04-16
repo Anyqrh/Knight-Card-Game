@@ -2,7 +2,7 @@ package KCG.GUI;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.event.ActionListener;
+
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -12,7 +12,7 @@ import javax.swing.JTextField;
 public class MainPanel extends JPanel{
 	
 	
-	
+
     private static final long serialVersionUID = 1L;
     int screenWidth;
     int screenHeight;
@@ -25,6 +25,7 @@ public class MainPanel extends JPanel{
     JLabel labelConnectS = new JLabel("Connection successful!",JLabel.CENTER);
     JButton connectButton = new JButton("Connect");     // 设置Connect按钮
     JButton startButton = new JButton("Start Game");    
+   
     public MainPanel(Dimension dimension){
     	
         screenWidth = (int)dimension.getWidth();
@@ -54,7 +55,7 @@ public class MainPanel extends JPanel{
         connectButton.setFont(new Font(null, Font.PLAIN, 35));
         startButton.setFont(new Font(null, Font.PLAIN, 40));
         
-    	ActionListener listener = new ConnectEvent(connectButton, text1, text2);// 创建connectevent的监视器 将text和text2传入ConnectEvent中
+    	new ConnectEvent(connectButton, text1, text2);// 创建connectevent的监视器 将text和text2传入ConnectEvent中
     	
         
         labelTitle.setBounds((screenWidth-1000)/2,(int)(screenHeight*0.02),1000,100);

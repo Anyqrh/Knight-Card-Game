@@ -27,9 +27,8 @@ public class Client {
 			try {	mysocket = new Socket();
 					read = new Read();
 					readData = new Thread(read);
-					
 					int port = Integer.parseInt(portS);   // 将字符串portS转换成Int型
-					//port = scanner.nextInt();
+					
 					if(mysocket.isConnected()) {}
 					else {
 							InetAddress address = InetAddress.getByName(IP);
@@ -60,7 +59,6 @@ public class Client {
 
 
 	class Read implements Runnable {
-
 		DataInputStream in;
 		public void setDataInputStream(DataInputStream in) {
 			this.in = in;
@@ -69,7 +67,6 @@ public class Client {
 			while(true) {
 				try {	
 					System.out.println("服务器说话：  "+in.readUTF());  // 有可能会堵塞
-				
 					System.out.println("客户端说话(退出请输入n)");
 				}catch(IOException e) {System.out.println("与服务器已断开"+e);
 										break;}

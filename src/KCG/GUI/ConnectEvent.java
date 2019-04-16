@@ -4,7 +4,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
-import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 public class ConnectEvent implements ActionListener {
@@ -19,11 +18,13 @@ public class ConnectEvent implements ActionListener {
 			IP = field1.getText();
 			port = field2.getText();
 			if("Connect".equals(cmd)){
+				System.out.println("ssss");
 				if(IP.equals("127.0.0.1") && port.equals("2010")){
 					
 					Client.setIPandPort(IP, port);   // 将客户输入的IP与端口号放入Client中
 					String [] args = new String[2];
 					Client.main(args);
+					
 					}	
 				}
 			}
